@@ -3,7 +3,7 @@
 message("Loading data... ", appendLF = F)
 
 dataFile <- "household_power_consumption.txt"
-data <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
+data <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".", na.strings = "?")
 
 # Show loading done message
 message("Done\n")
